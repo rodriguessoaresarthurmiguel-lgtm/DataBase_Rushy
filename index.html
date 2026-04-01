@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Almoxarifado</title>
+    <style>
+        table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2 f2 f2; }
+    </style>
+</head>
+<body>
+    <h2>Peças no Almoxarifado</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome da Peça</th>
+            <th>Quantidade</th>
+        </tr>
+        {% for peca in pecas %}
+        <tr>
+            <td>{{ peca[0] }}</td>
+            <td>{{ peca[1] }}</td>
+            <td>{{ peca[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
