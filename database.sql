@@ -63,4 +63,4 @@ INSERT INTO peças_no_almoxarifado
 (10, 'Nome', 0),
 (11, 'Nome', 0);
 
--- SELECT * FROM peças_no_almoxarifado;
+SELECT * FROM peças_no_almoxarifado;
